@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeworkCollectionViewCell" customModule="dragableHomework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SUU-jM-xvc">
+                        <rect key="frame" x="5" y="0.0" width="190" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1e3-f2-PUc">
+                        <rect key="frame" x="5" y="0.0" width="190" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rDH-CN-kjh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1e3-f2-PUc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="53k-3B-qG4"/>
+                <constraint firstItem="SUU-jM-xvc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5Gy-mL-nnr"/>
+                <constraint firstAttribute="trailing" secondItem="SUU-jM-xvc" secondAttribute="trailing" constant="5" id="F7l-Ok-tf4"/>
+                <constraint firstItem="1e3-f2-PUc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="G9x-c9-7eL"/>
+                <constraint firstAttribute="bottom" secondItem="SUU-jM-xvc" secondAttribute="bottom" id="aVM-h2-Niy"/>
+                <constraint firstItem="SUU-jM-xvc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ia2-Ff-jEy"/>
+                <constraint firstItem="1e3-f2-PUc" firstAttribute="width" secondItem="SUU-jM-xvc" secondAttribute="width" id="uTH-OF-2yz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="200" height="50"/>
+            <connections>
+                <outlet property="name" destination="SUU-jM-xvc" id="7NJ-BV-yMo"/>
+                <outlet property="upperView" destination="1e3-f2-PUc" id="65I-J9-NdA"/>
+            </connections>
+            <point key="canvasLocation" x="157" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>
